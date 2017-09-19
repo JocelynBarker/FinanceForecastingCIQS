@@ -68,7 +68,7 @@ Start-Transcript -Path $setupLog -Append
 
 cd $solutionTemplatePath
 ### DON'T FORGET TO CHANGE TO MASTER LATER...
-git clone  --branch master --single-branch https://github.com/Microsoft/r-server-hospital-length-of-stay $checkoutDir
+git clone  --branch master --single-branch https://github.com/JocelynBarker/FinanceForecastingCIQS $checkoutDir
 
 
 $solutionBase = $solutionTemplatePath + "\" + $checkoutDir 

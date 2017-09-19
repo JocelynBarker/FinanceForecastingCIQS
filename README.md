@@ -1,6 +1,6 @@
 <img src="Resources/Images/los.jpg" align="right" height="200px">
 
-# Predicting Length of Stay in Hospitals 
+# Revenue Forecasting Solution
 ## Implemented on SQL Server 2016 R Services
 
 Deploy this solution from the [Cortana Intelligence Gallery](https://aka.ms/hospital-los). 

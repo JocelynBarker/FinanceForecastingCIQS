@@ -106,7 +106,7 @@ try{
         ExecuteSQL $script
     
         Write-Host -ForeGroundColor 'green' ("Populate SQL table.")
-        $dataList = "LengthOfStay"
+        $dataList = ["LengthOfStay", "FinancialData"]
 		
 		# upload csv files into SQL tables
         foreach ($dataFile in $dataList)

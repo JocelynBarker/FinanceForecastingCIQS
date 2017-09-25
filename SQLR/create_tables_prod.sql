@@ -30,6 +30,13 @@ CREATE TABLE [dbo].[LengthOfStay_Prod](
 	    [facid] [varchar](1) NULL
     )
 
+DROP TABLE IF EXISTS [dbo].[FinanceData]
+CREATE TABLE [dbo].[FinanceData](
+	    [seriesID] [varchar](1) NOT NULL,
+	    [timePoint] [datetime] NOT NULL,
+	    [value] [float] NULL
+    )
+    
 CREATE CLUSTERED COLUMNSTORE INDEX lengthprod_cci ON LengthOfStay_Prod WITH (DROP_EXISTING = OFF);
 
 -- Copy the Stats, Models, and ColInfo tables to the Production database (Only used for Production). 

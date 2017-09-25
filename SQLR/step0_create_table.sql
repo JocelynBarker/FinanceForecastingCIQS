@@ -33,6 +33,13 @@ CREATE TABLE [dbo].[LengthOfStay](
 
 CREATE CLUSTERED COLUMNSTORE INDEX length_cci ON LengthOfStay WITH (DROP_EXISTING = OFF);
 
+DROP TABLE IF EXISTS [dbo].[FinanceData]
+CREATE TABLE [dbo].[FinanceData](
+	    [seriesID] [varchar](1) NOT NULL,
+	    [timePoint] [datetime] NOT NULL,
+	    [value] [float] NULL
+    )
+
 
 
 
